@@ -78,7 +78,7 @@ async function start() {
       faceMatcher.findBestMatch(d.descriptor)
     );
 
-    console.log(results[0].label);
+    // console.log(results[0].label);
     appendInfo.innerText = results[0].label;
     var answer = results[0].label;
     for (var i = 0; i < mainData.length; i++) {

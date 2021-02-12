@@ -50,10 +50,14 @@ let transpoter = nodemailer.createTransport({
   },
 });
 
-// app.get("/", function (req, res) {
-//   res.render("home");
-// });
+app.get("/", function (req, res) {
+  res.redirect("/home");
+});
 
 app.listen(8000, () => {
   console.log("App listening on port 8000!");
 });
+
+// app.listen(process.env.PORT || PORT, () => {
+//   console.log("App listening on port" + PORT);
+// });
